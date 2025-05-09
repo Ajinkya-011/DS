@@ -1,0 +1,164 @@
+steps for 7assignment
+1. create project javaweb->web app finish(name: assign7)
+2. right click on assgn7 new-> web service
+	a. name: mycalculator and package: com.myservice
+3. delete bottom text in mycalculator.java 
+
+4. right click mycalculator under web services of assign-7 on add operation 
+	a. add operations and give name
+5. Build then deploy -> assign-7
+6. RIght click on mycalculator -> Test web service
+
+*********
+1. New project CalculatorWebService Client
+2. open index file and create form
+	a. drag form target - > CalculatorServlet
+	b. create form take input and create submit button
+
+3. Right click on that calculatorwebservice file new->web services Client
+4. so web service reference file created
+5 . same as 3 new-> servlet and past that same name (action) here.
+6. servlet file will come
+	a. drag files from reference folder at bottom on same servlet file
+	b. get input from form Double.parseDouble(request.getParameter("value"));
+	c. modify html and call function
+7. clean and buil client
+8. Run index.html in client
+
+
+Summary from CHATGPT
+
+Based on the video you provided—“LP-V: Distributed System Lab Assignment-7 || Web Service || SPPU BE IT”—the assignment involves creating a simple web service and a distributed application to consume it. This aligns with Assignment 7 from the SPPU Distributed Systems Lab.
+files.ifi.uzh.ch
++4
+YouTube
++4
+YouTube
++4
+
+📝 Assignment Overview
+Objective:
+Develop a simple web service (e.g., a calculator) and create a distributed application that consumes this service.
+GitHub
+
+Tools & Technologies:
+
+Java 8
+
+NetBeans IDE 8.2
+
+GlassFish Server 4.1.1
+
+Apache Axis2 or JAX-WS for web services
+Reddit
++11
+GitHub
++11
+Biblioteca UTCN
++11
+Reddit
++4
+GitHub
++4
+GitHub
++4
+
+✅ Step-by-Step Implementation Guide
+1. Set Up the Development Environment
+Install Java 8:
+
+Ensure Java 8 is installed on your system.
+
+Install NetBeans IDE 8.2:
+
+Download and install NetBeans IDE 8.2.
+
+Install GlassFish Server 4.1.1:
+
+During NetBeans installation, include the GlassFish Server.
+
+Configure GlassFish in NetBeans:
+
+In NetBeans, go to Tools > Servers > Add Server.
+
+Select GlassFish Server and specify the installation directory.
+
+2. Create the Web Service (Server-Side)
+Start a New Project:
+
+In NetBeans, create a new project: Java EE > Web Application.
+
+Define the Web Service:
+
+Right-click on the project, select New > Web Service.
+
+Name it (e.g., CalculatorService) and define methods like add, subtract, multiply, and divide.
+
+Implement the Methods:
+
+Provide implementations for each method in the service class.
+
+Deploy the Web Service:
+
+Right-click on the project and select Deploy.
+
+Ensure the service is running on GlassFish.
+
+Test the Web Service:
+
+Right-click on the service class and select Test Web Service.
+
+Use the provided interface to test each method.
+
+3. Create the Web Service Client (Consumer Application)
+Start a New Java Application Project:
+
+In NetBeans, create a new project: Java > Java Application.
+
+Generate Web Service Client:
+
+Right-click on the project, select New > Web Service Client.
+
+Enter the WSDL URL of the deployed web service (e.g., http://localhost:8080/CalculatorService/CalculatorService?wsdl).
+
+NetBeans will generate the necessary client stubs.
+
+Implement the Client Application:
+
+In the main method, create an instance of the service and call its methods.
+
+Display the results to the user.
+
+Run the Client Application:
+
+Execute the application and verify that it correctly consumes the web service.
+
+4. Testing and Validation
+Test Various Scenarios:
+
+Provide different inputs to the client application and verify the outputs.
+
+Handle Exceptions:
+
+Implement error handling for scenarios like division by zero or invalid inputs.
+
+5. Documentation and Reporting
+Prepare a Report:
+
+Document the steps taken, including screenshots of the web service and client application.
+
+Include code snippets and explanations for each part.
+
+Submit the Assignment:
+
+Ensure all required files and the report are submitted as per your instructor's guidelines.
+
+📁 Additional Resources
+GitHub Repository for Reference:
+
+A sample implementation of this assignment is available at GitHub - RanjeetKumbhar01/BE_IT_DS_ASSIGNMENTS_SPPU.
+GitHub
+
+Distributed Systems Tutorial:
+
+For a deeper understanding of distributed systems concepts, refer to the GeeksforGeeks Distributed Systems Tutorial.
